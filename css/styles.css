@@ -713,6 +713,8 @@ margin-bottom: 30px;
   line-height: 1.63;
   letter-spacing: 0.03em;
   cursor: pointer;
+
+  border: none;
 }
 
 .all-button:hover,
@@ -730,6 +732,8 @@ margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
+
+  border: none;
 }
 
 .web-button:hover,
