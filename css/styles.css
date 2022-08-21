@@ -268,16 +268,6 @@ img {
   background-size: contain;
   margin-bottom: 30px;
 }
-.social-item-twitter {
-  display: block;
-  padding: 12px 12px;
-  width: 44px;
-  height: 44px;
-  background-position: center;
-  outline: 1px solid red;
-  background-size: contain;
-  gap: 10px;
-}
 .social-list-container {
   display: flex;
   justify-content: center;
@@ -372,10 +362,9 @@ img {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--color-blue);
-  color: var(--color-white);
 }
-.soc:hover,
-.soc:focus {
+.social-link:hover .soc,
+.social-link:focus .soc {
   fill: var(--color-white);
 }
 
@@ -635,7 +624,6 @@ footer {
 .hero-ii-port-item:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
 .hero-ii-border {
   padding-top: 20px;
   padding-left: 24px;
