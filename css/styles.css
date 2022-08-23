@@ -220,7 +220,6 @@ img {
 .container-team {
   display: flex;
   align-items: center;
-  margin-bottom: 60px;
 }
 .overlay {
   margin-left: 0;
