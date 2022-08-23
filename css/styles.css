@@ -81,6 +81,13 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.line-border {
+  padding: 32px 0;
+  border-bottom: 1px solid #ececec;
+  margin: 0 auto;
+}
+
 /* 
 .header {
   padding: 25px 0;
@@ -93,7 +100,7 @@ img {
 
 .header-container {
   display: flex;
-  margin-bottom: 32px; 
+  margin-bottom: 32px;
   margin-top: 32px;
   width: 100%;
 }
@@ -205,12 +212,16 @@ img {
   fill: var(--color-blue);
 }
 
-
 .hero-container {
   display: block;
   align-items: center;
 }
 
+.container-team {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
 .overlay {
   margin-left: 0;
   margin-right: auto;
@@ -265,8 +276,7 @@ img {
   letter-spacing: 0.06em;
   cursor: pointer;
   border: none;
-
-  rgba(0, 0, 0, 0.25)
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -282,7 +292,7 @@ img {
   padding-top: 0;
   justify-content: center;
   display: flex;
-  /* padding-top: 94px; */
+  padding-top: 94px;
   gap: 30px;
 }
 .hero-ii-item {
@@ -305,6 +315,13 @@ img {
   display: flex;
   justify-content: center;
 }
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 .hero-ii-title {
   text-align: left;
   margin-bottom: 10px;
@@ -342,12 +359,12 @@ img {
   margin-right: 30px;
 }
 .container.header-container {
-  margin: 0 auto 0;
+  margin: 0 auto;
   display: flex;
   padding: 0 0;
 }
 .hero-iv-team {
-  margin: 0 auto 0;
+  margin: 0 auto;
   text-align: center;
   width: 1600px;
   background-color: var(--color-button-grey);
@@ -559,12 +576,12 @@ footer {
 .footer-social-link:focus {
   background-color: var(--color-blue);
 }
-.footer-social-link .footer-soc:hover,
-.footer-social-link .footer-soc:focus {
+.footer-social-link:hover .footer-soc,
+.footer-social-link:focus .footer-soc {
   fill: var(--color-white);
 }
 
-/*  Вторая страница Portfolio */
+/*  Доуга сторінка Portfolio */
 
 .hero-port-section {
   padding: 94px 0 0;
@@ -596,19 +613,8 @@ footer {
 .hero-blue-btn:focus {
   background-color: var(--color-button-blue);
 }
-/* .hero-port-item {
-  color: var(--title-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  border-radius: 4px;
-  border: none;
-} */
 .hero-port-item:not(:last-child) {
   margin-right: 8px;
-  /* background-color: var(--color-button-grey); */
 }
 .hero-port-btn {
   padding: 6px 22px;

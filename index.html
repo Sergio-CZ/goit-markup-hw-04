@@ -17,13 +17,10 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
     <!--Шапка  сторінки-->
-
-    <header>
-      <section class="section header">
-        <div class="container header-container">
+    <header class="line-border">
+             <div class="container header-container">
           <a class="header-logo" href="index.html" title="Наш Логотип"
             ><span class="header-logo-web">Web</span>Studio</a
           >
@@ -43,7 +40,6 @@
               <a class="header-contact-link" href="mailto:info@devstudio.com">
                 <svg class="header-mail-contact" width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-envelope-hover-1"></use>
-                  ;
                 </svg>
                 info@devstudio.com
               </a>
@@ -51,8 +47,7 @@
             <li class="header-contact-item">
               <a class="header-contact-link" href="tel:+380961111111">
                 <svg class="header-tel-contact" width="10" height="16">
-                  <use href="./images/symbol-defs.svg#icon-smartphone1-1"></use>
-                  ;</svg
+                  <use href="./images/symbol-defs.svg#icon-smartphone1-1"></use></svg
                 >+38 096 111 11 11</a
               >
             </li>
@@ -68,10 +63,9 @@
         </div>
       </section>
 
-      <!-- Section I I I -->
+      <!-- Section III -->
 
       <section class="section hero-ii">
-        <!-- Заголовок, которого не будет видно -->
 
         <h2 class="hero-ii-text visually-hidden">Правила нашої работи</h2>
 
@@ -117,26 +111,35 @@
         <!-- Section I I I -->
       </section>
       <section class="section hero-iii">
-        <h2 class="hero-iii-title">Чим ми займаємося</h2>
+        <h2 class="hero-iii-title">Чим ми займаємось</h2>
         <ul class="container header-container">
           <li class="hero-iii-item">
-            <img src="./images/box1.jpg" alt="Работа на планшеті" width="370" />
+            <div class="thumb">
+              <img src="./images/box1.jpg" alt="Работа на планшеті" width="370" />
+              <!-- <p class="hero-iii-desk">Десктопні додатки</p> -->
+            </div>
           </li>
           <li class="hero-iii-item">
-            <img
-              src="./images/box2.jpg"
-              alt="Перенесення даних з телефона на ноутбук"
-              width="370"
-            />
+            <div class="thumb">
+              <img
+                src="./images/box2.jpg"
+                alt="Перенесення даних з телефона на ноутбук"
+                width="370"
+              />
+              <!-- <p class="hero-iii-desk">Мобільні додатки</p> -->
+            </div>
           </li>
           <li class="hero-iii-item">
-            <img src="./images/box3.jpg" alt="Выбір кольора на планшеті" width="370" />
+            <div class="thumb">
+              <img src="./images/box3.jpg" alt="Вибір кольору на планшеті" width="370" />
+              <!-- <p class="hero-iii-desk">Дизайнерські рішення</p> -->
+            </div>
           </li>
         </ul>
       </section>
       <section class="section hero-iv-team">
         <h2 class="hero-iii-title">Наша команда</h2>
-        <ul class="container header-container">
+        <ul class="container container-team">
           <li class="hero-iv-item">
             <img src="./images/img1.jpg" alt="Портрет Ігоря" width="270" />
             <h3 class="hero-iv-name">Ігор Дем'яненко</h3>
@@ -285,42 +288,42 @@
           <ul class="clients-list">
             <li class="clients-item">
               <a href="#" class="main-clients">
-                <svg class="clients" width="106" height="60">
+                <svg class="clients" width="170" height="92">
                   <use href="./images/symbol-defs.svg#icon-Logo-5"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
               <a href="#" class="main-clients">
-                <svg class="clients" width="106" height="60">
+                <svg class="clients" width="170" height="92">
                   <use href="./images/symbol-defs.svg#icon-Logo-6"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
               <a href="#" class="main-clients">
-                <svg class="clients" width="106" height="60">
+                <svg class="clients" width="170" height="92">
                   <use href="./images/symbol-defs.svg#icon-Logo-7"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
               <a href="#" class="main-clients">
-                <svg class="clients" width="106" height="60">
+                <svg class="clients" width="170" height="92">
                   <use href="./images/symbol-defs.svg#icon-Logo-8"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="main-clients">
-                <svg class="clients" width="106" height="60">
+                <svg class="clients" width="170" height="92">
                   <use href="./images/symbol-defs.svg#icon-Logo-9"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="main-clients">
-                <svg class="clients" width="106" height="60">
+                <svg class="clients" width="170" height="92">
                   <use href="./images/symbol-defs.svg#icon-Logo-10"></use>
                 </svg>
               </a>
@@ -351,7 +354,6 @@
         </div>
         <div class="last-footer">
           <h3 class="footer-title">приєднуйтесь</h3>
-
           <ul class="footer-social-list">
             <li>
               <a href="#" class="footer-social-link">
@@ -385,5 +387,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-close" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
