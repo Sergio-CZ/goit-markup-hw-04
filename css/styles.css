@@ -69,9 +69,9 @@ img {
 }
 
 .container {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   max-width: 1200px;
   width: 100%;
   padding: 0 15px;
@@ -83,7 +83,7 @@ img {
 }
 
 .line-border {
-  padding: 32px 0;
+  padding: 25px 0;
   border-bottom: 1px solid #ececec;
   margin: 0 auto;
 }
@@ -100,8 +100,10 @@ img {
 
 .header-container {
   display: flex;
-  margin-bottom: 32px;
-  margin-top: 32px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
   width: 100%;
 }
 .hero-container-over {
@@ -114,6 +116,9 @@ img {
 
 .header-container-port {
   display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
   gap: 8px;
 }
 
@@ -179,12 +184,15 @@ img {
 
 .header-contact-link {
   display: flex;
-  margin-right: 30px;
   align-items: center;
   color: var(--text-color);
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+}
+
+.header-contact-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .header-mail-contact {
@@ -365,7 +373,7 @@ img {
 .hero-iv-team {
   margin: 0 auto;
   text-align: center;
-  width: 1600px;
+  /* width: 1600px; */
   background-color: var(--color-button-grey);
 }
 
@@ -478,13 +486,19 @@ footer {
   text-align: left;
   background-color: var(--color-footer);
 }
-.footer-address .footer-list:not(:last-child) {
-  margin-bottom: 9px;
+
+.footer-studio {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+/* 
+.footer-address .footer-item:not(:last-child) {
+  margin-bottom: 9px;
+} */
 .footer-text {
   display: block;
   text-align: left;
-  padding-top: 60px;
+  /* padding-top: 60px; */
   margin-bottom: 20px;
   color: var(--color-white);
   font-family: Raleway;
@@ -526,8 +540,8 @@ footer {
 
 .last-footer {
   display: block;
-  padding-top: 72px;
-  padding-bottom: 100px;
+  padding-top: 12px;
+  /* padding-bottom: 100px; */
   margin-left: 70px;
 }
 
@@ -555,6 +569,7 @@ footer {
   text-transform: uppercase;
 }
 .footer-social-list {
+  /* padding-bottom: 100px; */
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -634,17 +649,18 @@ footer {
   background-color: var(--color-button-blue);
   color: var(--color-white);
 }
+/* 
 .hero-ii-port {
   padding: 0 0 94px;
   margin: 0 auto 0;
   text-align: center;
   width: 1600px;
-}
+} */
 .hero-ii-port-container {
   display: flex;
-  width: 1200px;
+  /* width: 1200px; */
   flex-wrap: wrap;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   margin: 0 auto;
 }
 .hero-ii-port-item {
